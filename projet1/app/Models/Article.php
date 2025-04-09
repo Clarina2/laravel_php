@@ -11,9 +11,18 @@ class Article extends Model
 
     protected $fillable = [ 
         
-        'caracteristiques','designation','marque','reference','qtestock','prixAchat','
-         prixVente','prixSolde','imageartpetitf','imageartgrandf','categorieID','scateg
-         orieID'  
+        'caracteristiques',
+        'designation',
+        'marque',
+        'reference',
+        'qtestock',
+        'prixAchat',
+        'prixVente',
+        'prixSolde',
+        'imageartpetitf',
+        'imageartgrandf',
+        'categorieID',
+        'scategorieID'  
     ]; 
          
     public function categories() 

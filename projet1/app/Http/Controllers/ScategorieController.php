@@ -33,7 +33,7 @@ class ScategorieController extends Controller
         ]);
         $scategorie ->save();
 
-        return response()->json('S/categorie créée !')
+        return response()->json('S/categorie créée !');
     }
 
     /**
@@ -59,9 +59,9 @@ class ScategorieController extends Controller
     public function update(Request $request, $id)
     {
         $scategorie = Scategorie::find($id);
-        $scategorie = update($request->all());
+        $scategorie -> update($request->all());
         
-        return response()->json('S/Categorie MAJ !')
+        return response()->json('S/Categorie MAJ !');
     }
 
     /**
@@ -84,6 +84,6 @@ class ScategorieController extends Controller
     
     public function showSCategorieByCAT($idcat){ 
      $Scategorie = Scategorie::where('categorieID',$idcat)->with('categories')->get()->toArray();
-     return response()->json($Scategorie)
+     return response()->json($Scategorie);
     }
 }

@@ -18,7 +18,7 @@ class Scategorie extends Model
     }
 
     public function article() 
-{  
-return $this->hasMany(Article::class,"scategorieID");  
-}
+    {  
+    return $this->hasMany(Article::class,"scategorieID");  
+    }
 }
